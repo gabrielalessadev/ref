@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+:root {
+    --green500: #74b5df;
+  }
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Wix Madefor Display', system-ui, -apple-system,
+      BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+      'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+    color: #74B5DF;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    transition: all ease 200ms;
+}
+
+&:hover {
+    background-size: 100%;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+nav h1 {
+    font-size: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    line-height: 2;
+    font-size: 1.3rem;
+    font-weight: 700;
+} 
+
+nav ul a {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+}
+nav li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 4px;
+    background-color: var(--green500);
+    bottom: -8px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+ul:hover a {
+    color: gray;
+}
+nav li a:hover {
+    color: inherit;
+}
+nav li a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+} 
+
+/* SECTION 01 */
+
+#sec1{
+    background-image: url(https://icarabe.org/sites/default/files/img/2022-06/refugiado.jpg);
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 90vh;
+    display: flex;
+    color: white;
+    align-content: end;
+    flex-direction: column-reverse;
+    padding: 20px;
+    background-attachment: fixed;
+}
+#sec01 {
+    align-content: center;
+    width: 800px;
+    padding: 20px 130px;
+    
+}
+#sec01 h1 {
+    font-size: 60px;
+    color: #74B5DF;
+    width: 750px;
+    padding: 40px 0;
+}
+#sec01 h2 {
+    font-size: 30px;
+}
+#sec01 p {
+    font-size: 25px;
+}
+
+/* SECTION 02 */
+
+#sec2 {
+    background-color: #74B5DF;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+    width: 100%;
+    height: 550px;
+    background-attachment: fixed;
+}
+.articlesec02 {
+    width: 100%;
+    padding: 0 150px;
+
+}
+.articlesec02 h1 {
+    font-size: 30px;
+    padding: 30px 0;
+}
+.articlesec02 p {
+    font-size: 20px;
+}
+
+/* SECTION 03 */
+
+#sec3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 25px 0;
+    width: 100%;
+    height: 1200px;
+    background-attachment: fixed;
+}
+.sec03 {
+    width: 80%;
+}
+.sec03 h1 {
+    color: #74B5DF;
+    text-align: center;
+    padding: 0 50px 30px;
+    font-size: 60px;
+}
+.frames {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SECTION 04 */
+
+#sec4{
+    background-image: url(https://imagens.ebc.com.br/IUsHB9pZPSKLGeBrprLxBcZ35QE=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2019-05-21t130504z_1_lynxnpef4k13z_rtroptp_4_venezuela-politics-brazil.jpg?itok=8w1Vnz8M);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    background-attachment: fixed;
+}
+.sec04 {
+    align-content: center;
+    width: 800px;
+    padding: 20px 130px;
+}
+.sec04 h1 {
+    font-size: 60px;
+    color: #74B5DF;
+    width: 750px;
+    padding: 40px 0;
+}
+.sec04 p {
+    color: white;
+    font-size: 25px;
+}
+
+/* SECTION 05 */
+
+#sec05 {
+    width: 100%;
+    height: 900px;
+    background-attachment: fixed;
+    background-color: #74B5DF;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.articlesec05 {
+    width: 80%;
+}
+.articlesec05 h1 {
+    font-size: 30px;
+    padding: 30px 0;
+}
+.articlesec05 p {
+    font-size: 20px;
+}
+
+/* SECTION 06 */
+
+
+#sec6{
+    background-image: url(https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/02/AGF20220205048.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    background-blend-mode: color;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-attachment: fixed;
+}
+.sec06 {
+    align-content: center;
+    width: 800px;
+    padding: 20px 130px;
+}
+.sec06 h1 {
+    font-size: 60px;
+    color: #ffdf00;
+    width: 750px;
+    padding: 40px 0;
+}
+.sec06 p {
+    font-size: 25px;
+    color: #009c3b;
+}
+
+/* SECTION 07 */
+
+#sec07 {
+    background-color: #009c3b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+    width: 100%;
+    height: 1200px;
+    background-attachment: fixed;
+}
+.artsec {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.articlesec07 {
+    width: 1500px;
+    display: grid;
+    gap: 25px;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.tile {
+    width: auto;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #002776;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    padding: 2rem;
+    letter-spacing: 1px;
+    flex-direction: column;
+    align-content: start;
+}
+.tile h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1;
+    text-align: center;
+    padding: 10px 30px;
+}
+#sec07 h1 {
+    font-size: 60px;
+    padding: 30px 0;
+}
+.articlesec07 p {
+    font-size: 20px;
+}
+#br {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+  
+    gap: 20px;
+}
+#brasil h1 {
+    font-size: 30px;
+}
+#brasil p {
+    font-size: 20px;
+}
+img {
+    border-radius: 15px;
+}
+.image {
+    width: 600px;
+}
+#bra {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+#bra h1 {
+    font-size: 40px;
+}
+#bra p {
+    font-size: 20px;
+}
+#braz {
+    width: 80%;
+    padding: 0 0 30px 0;
+}
+#braz h1 {
+    font-size: 40px;
+}
+#braz p {
+    font-size: 20px;
+}
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: #74B5DF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+div { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    width: 80%;
+}
+.foot {
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+.foot p {
+    font-size: 20px;
+}
+.foot h1 {
+    font-size: 40px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #74B5DF;
+}
+
+/* SCRIPT */
+
+.reveal {
+    visibility: hidden;
+}
