@@ -1,26 +1,36 @@
-const header = document.getElementById('header')
-const logo = document.querySelector('.logo')
+ const header = document.getElementById('header')
 
-window.onscroll = () => {
-  if (
-    document.body.scrollTop > 1850 ||
-    document.documentElement.scrollTop > 1850
-  ) {
-    header.classList.add('dark')
-    logo.classList.add('dark-logo')
-  } else {
-    header.classList.remove('dark')
-    logo.classList.remove('dark-logo')
-  } if(document.body.scrollTop > 3000 ||
-    document.documentElement.scrollTop > 3000){
-      header.classList.remove('dark')
-      logo.classList.remove('dark-logo')
-  }
-}
+
+ window.onscroll = () => {
+   if (
+     document.body.scrollTop >= 540 ||
+     document.documentElement.scrollTop >= 540
+   ) {
+     header.classList.add('scroll')
+    
+   } else {
+     header.classList.remove('scroll')
+     
+   } if (document.body.scrollTop >= 2620 ||
+     document.documentElement.scrollTop >= 2620){
+       header.classList.remove('scroll')
+   } 
+   
+ }
+
 
 // reveal
 
 window.sr = ScrollReveal({ reset: true });
 
 sr.reveal('.reveal', { duration: 2000 });
-aaaa
+
+// Sticky menu background
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 500) {
+      document.querySelector(".header").style.opacity = 0.9;
+  } else {
+      document.querySelector(".header").style.opacity = 1;
+  }
+});

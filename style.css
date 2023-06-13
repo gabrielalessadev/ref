@@ -4,7 +4,8 @@
     box-sizing: border-box; 
 }
 :root {
-    --green500: #74b5df;
+    --blue500: #0c4f87;
+    --white600: #ffffff;
   }
 html {
     scroll-behavior: smooth;
@@ -31,8 +32,14 @@ a {
 
 /* HEADER */
 
-header {
-    color: #74B5DF;
+
+.logo:hover {
+    color: #0c4f87;
+    transition: 1s;
+}
+
+.header {
+    color: #0c4f87;
     z-index: 1000;
     position: fixed;
     top: 0;
@@ -41,6 +48,12 @@ header {
     background-color: white;
     transition: all ease 200ms;
 }
+.header.scroll {
+    transition: 0.8s;
+    background-color: #74B5DF;
+    color: #0c4f87;
+}
+
 
 &:hover {
     background-size: 100%;
@@ -80,22 +93,26 @@ nav li a::before {
     width: 100%;
     height: 5px;
     border-radius: 1px;
-    background-color: var(--green500);
+    background-color: var(--blue500);
     bottom: -8px;
     left: 0;
     transform-origin: right;
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
 }
+
 ul:hover a {
-    color: gray;
+    transition: 1s;
+    color: #cecece;
 }
 nav li a:hover {
     color: inherit;
+    
 }
 nav li a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
+    transition: 0.5s;
 } 
 
 /* SECTION 01 */
@@ -126,6 +143,7 @@ nav li a:hover::before {
 }
 #sec01 h2 {
     font-size: 30px;
+    
 }
 #sec01 p {
     font-size: 25px;
@@ -144,6 +162,7 @@ nav li a:hover::before {
     height: 550px;
     background-attachment: fixed;
 }
+
 .articlesec02 {
     width: 100%;
     padding: 0 150px;
@@ -172,7 +191,7 @@ nav li a:hover::before {
     width: 80%;
 }
 .sec03 h1 {
-    color: #74B5DF;
+    color: #0c4f87;
     text-align: center;
     padding: 0 50px 30px;
     font-size: 60px;
@@ -249,7 +268,7 @@ nav li a:hover::before {
     background-size: cover;
     height: 90vh;
     background-blend-mode: color;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -262,28 +281,29 @@ nav li a:hover::before {
 }
 .sec06 h1 {
     font-size: 60px;
-    color: #ffdf00;
+    color: #74B5DF;
     width: 750px;
     padding: 40px 0;
 }
 .sec06 p {
     font-size: 25px;
-    color: #009c3b;
+    color: #ffffff;
 }
 
 /* SECTION 07 */
 
 #sec07 {
-    background-color: #009c3b;
-    color: white;
+    background-color: #ffffff;
+    color: #0c4f87;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 25px 0;
     width: 100%;
-    height: 1200px;
+    height: 800px;
     background-attachment: fixed;
 }
+
 .artsec {
     width: 80%;
     display: flex;
@@ -299,27 +319,7 @@ nav li a:hover::before {
     margin-top: 3rem;
 }
 
-.tile {
-    width: auto;
-    display: flex;
-    align-items: center;
-    color: white;
-    background-color: #002776;
-    border-radius: 5px;
-    text-align: center;
-    position: relative;
-    padding: 2rem;
-    letter-spacing: 1px;
-    flex-direction: column;
-    align-content: start;
-}
-.tile h3 {
-    color: #fff;
-    font-size: 1.5rem;
-    line-height: 1;
-    text-align: center;
-    padding: 10px 30px;
-}
+
 #sec07 h1 {
     font-size: 60px;
     padding: 30px 0;
@@ -335,7 +335,7 @@ nav li a:hover::before {
     gap: 20px;
 }
 #brasil h1 {
-    font-size: 30px;
+    font-size: 40px;
 }
 #brasil p {
     font-size: 20px;
@@ -371,7 +371,7 @@ img {
 footer {
     width: 100%;
     height: 300px;
-    background-color: #74B5DF;
+    background-color: #0c4f87;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -400,9 +400,12 @@ div {
 ::-webkit-scrollbar {
     width: 10px;
     background-color: #f1f1f1;
+    
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #74B5DF;
+    background-color: #0c4f87;
+    height: 103px;
+    /* border-radius: 0 15px 15px 0 ; */
 }
 
 /* SCRIPT */
