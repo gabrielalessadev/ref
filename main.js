@@ -19,7 +19,7 @@ const header = document.getElementById('header')
    } 
    
  }
- isso aqui e java e pouco codigo nao precisa de muito 
+
 // reveal
 
 window.sr = ScrollReveal({ reset: true });
