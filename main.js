@@ -1,4 +1,6 @@
- const header = document.getElementById('header')
+// color
+
+const header = document.getElementById('header')
 
 
  window.onscroll = () => {
@@ -17,15 +19,14 @@
    } 
    
  }
-
-
+ isso aqui e java e pouco codigo nao precisa de muito 
 // reveal
 
 window.sr = ScrollReveal({ reset: true });
 
 sr.reveal('.reveal', { duration: 2000 });
 
-// Sticky menu background
+// opacity
 
 window.addEventListener("scroll", function () {
   if (window.scrollY > 500) {
