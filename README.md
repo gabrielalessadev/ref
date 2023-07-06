@@ -1,4 +1,4 @@
-# Dia do Refugiado - Site de Homenagem
+# Dia do Refugiado - https://gabrielalessadev.github.io/ref/#
 Dia do Refugiado - Refúgio
 
 Este repositório contém um site dedicado ao Dia do Refugiado, um dado importante para conscientização e apoio aos milhões de indivíduos que foram forçados a deixar seus países de origem devido a conflitos, perseguições e violação dos direitos humanos. O objetivo deste site é promover a compreensão, solidariedade e ação em prol dos refugiados ao redor do mundo.
@@ -16,7 +16,6 @@ O dia é marcado por eventos, palestras, seminários e campanhas de conscientiza
 
 3. Advocacia e Ação
 O Dia do Refugiado também serve como uma plataforma para a advocacia e ação em prol dos direitos dos refugiados. Organizações, governos e indivíduos são encorajados a se envolver em iniciativas que buscam melhorar as condições de vida dos refugiados, apoiar sua integração nas sociedades de acolhimento e promover soluções duradouras para o deslocamento forçado.
-
 # Conteúdo do site 
 Este site em homenagem ao Dia do Refugiado apresenta as seguintes seções:
 
