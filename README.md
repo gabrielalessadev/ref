@@ -17,7 +17,7 @@ O dia é marcado por eventos, palestras, seminários e campanhas de conscientiza
 3. Advocacia e Ação
 O Dia do Refugiado também serve como uma plataforma para a advocacia e ação em prol dos direitos dos refugiados. Organizações, governos e indivíduos são encorajados a se envolver em iniciativas que buscam melhorar as condições de vida dos refugiados, apoiar sua integração nas sociedades de acolhimento e promover soluções duradouras para o deslocamento forçado.
 
-## Conteúdo do site
+# Conteúdo do site
 Este site em homenagem ao Dia do Refugiado apresenta as seguintes seções:
 
 1. Visão geral do Dia do Refugiado e sua importância.
